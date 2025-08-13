@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Driven Lab · Landing Page</title>
+  <style>
+    :root {
+      --accent: #cc0033;
+      --primary: #3b82f6;
+      --primary-dark: #2563eb;
+      --bg: #f9f9f9;
+      --card-bg: #ffffff;
+      --text: #333;
+      --radius: 10px;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 2.5rem;
+    }
+    header h1 { margin: 0 0 0.5rem; }
+    .container {
+      max-width: 1050px;
+      margin: -3rem auto 4rem;
+      padding: 0 1.25rem;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-left: 5px solid var(--accent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 {
+      margin: 0 0 0.55rem;
+      font-size: 1.25rem;
+    }
+    .card p { margin: 0 0 1rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.55rem 1.2rem;
+      margin: 0.35rem 0.4rem 0 0;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: background 0.15s ease;
+    }
+    .btn:hover { background: var(--primary-dark); }
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 2.5rem 1rem 3rem;
+      font-size: 0.9rem;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HERO ===== -->
+  <header>
+    <h1>Welcome to Your Self-Driven Lab Repository</h1>
+    <p>Explore build guides, software, and hands-on tutorials for automated liquid handling and experiment optimization.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== LIQUID HANDLERS ===== -->
+    <section class="card" style="border:none; box-shadow:none; padding-bottom:0;">
+      <h2 class="section-title">🧰 Liquid Handler Platforms</h2>
+      <p>Choose your platform to access build guides, software, and documentation.</p>
+    </section>
+    <div class="cards-grid">
+
+      <!-- AutoPipette Liquid Handler -->
+      <section class="card">
+        <h2>AutoPipette Liquid Handler</h2>
+        <p>Automated pipetting platform with SDL software and full build documentation.</p>
+        <div>
+          <a class="btn" href="AutoPipette%20Liquid%20Handler/AutoPipette%20Liquid%20Handler%20Building%20Guide.pdf" target="_blank">Build Guide (PDF)</a>
+          <a class="btn" href="AutoPipette%20Liquid%20Handler/AutoPipette%20Liquid%20Handler%20Parts%20List.xlsx" target="_blank">Parts List (Excel)</a>
+          <a class="btn" href="AutoPipette%20Liquid%20Handler/AutoPipette%20SDL%20Software/README.md" target="_blank">SDL Software Docs</a>
+          <a class="btn" href="AutoPipette%20Liquid%20Handler/AutoPipette%20SDL%20Software/main.py" target="_blank">Launch Software</a>
+        </div>
+      </section>
+
+      <!-- Pen Plotter Liquid Handler -->
+      <section class="card">
+        <h2>Pen Plotter Liquid Handler</h2>
+        <p>Original AxiDraw-based liquid handler with build guides and SOP.</p>
+        <div>
+          <a class="btn" href="Pen%20Plotter%20Liquid%20Handler/Pen%20Plotter%20LH%20Build%20Guide.pdf" target="_blank">Build Guide (PDF)</a>
+          <a class="btn" href="Pen%20Plotter%20Liquid%20Handler/Building%20Guide.pptx" target="_blank">Build Guide (PPTX)</a>
+          <a class="btn" href="Pen%20Plotter%20Liquid%20Handler/SDL_SOP.pdf" target="_blank">Software SOP</a>
+          <a class="btn" href="Pen%20Plotter%20Liquid%20Handler/SDL%20Software/main.py" target="_blank">Launch Software</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== HANDS-ON TUTORIALS ===== -->
+    <section class="card" style="border:none; box-shadow:none; margin-top:2.5rem; padding-bottom:0;">
+      <h2 class="section-title">🧪 Hands-on Tutorial</h2>
+      <p>Work through practical examples using local Jupyter notebooks.</p>
+    </section>
+    <div class="cards-grid">
+
+      <!-- Section 1 -->
+      <section class="card">
+        <h2>Section 1 · Data Exploration</h2>
+        <p>Explore your dataset with interactive visualizations and summary statistics.</p>
+        <div>
+          <a class="btn" href="Hands-on%20Tutorial/Section%201%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Open Notebook</a>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="card">
+        <h2>Section 2 · Model Training</h2>
+        <p>Train a model with customizable parameters and visual feedback.</p>
+        <div>
+          <a class="btn" href="Hands-on%20Tutorial/Section%202%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Open Notebook</a>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="card">
+        <h2>Section 3 · Evaluation &amp; Analysis</h2>
+        <p>Assess model performance and visualize results to guide next steps.</p>
+        <div>
+          <a class="btn" href="Hands-on%20Tutorial/Section_3%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Open Notebook</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Your Name / Lab · Powered by GitHub Pages
+  </footer>
+</body>
+</html>

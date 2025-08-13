@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+shap
+scikit-learn
+pyDOE
+pyvisa
+ttkthemes
+pythonnet

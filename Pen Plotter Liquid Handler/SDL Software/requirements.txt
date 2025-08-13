@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+shap
+scikit-learn
+pyDOE
+pyvisa
+https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_API.zip
+ttkthemes
+pythonnet

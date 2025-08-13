@@ -1,0 +1,9 @@
+Step,Source,Destination,Volume ul,Mix,New Tip
+1,Large_Vial0,Large_Vial0,200,0,
+2,Large_Vial0,HPLC_Vial0,300,0,
+3,Large_Vial0,HPLC_Vial0,300,0,
+4,Large_Vial0,HPLC_Vial0,300,0,
+5,Large_Vial1,HPLC_Vial0,250,0,Yes
+6,Large_Vial1,HPLC_Vial0,250,0,
+7,Small_Tube0,HPLC_Vial0,300,0,Yes
+8,Small_Tube1,HPLC_Vial0,300,0,Yes

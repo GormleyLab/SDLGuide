@@ -1,0 +1,4 @@
+Step,Source,Destination,Volume ml,Mix
+1,N_Lgvial1,N_HPLCvial1,0.5,0
+2,N_Smtube1,N_HPLCvial1,0.5,0
+3,N_Smtube2,N_HPLCvial1,0.5,3
