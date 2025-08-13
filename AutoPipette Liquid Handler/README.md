@@ -1,7 +1,7 @@
 # Self-Driving Lab based on ACRO System and Integra AutoPipette
 
 <p align="center">
-  <img width="400" alt="liquibot" src="https://github.com/user-attachments/assets/b4a051df-5d4a-470f-a013-a1882d76c11e" />
+  <img width="400" alt="liquibot" src="/Images/liquibot.png" />
 </p>
 
 This project provides a graphical user interface (GUI) for automating enzyme assay experiments using a custom-designed liquid handler based on the ACRO system and Integra autopipette, as well as a SpectraMax plate reader. It enables users to design, dispense, and analyze experimental formulations with minimal manual intervention.
@@ -51,7 +51,7 @@ src/
 
 For hardware assembly and configuration, please refer to the [AutoPipette Liquid Handler.pdf](../AutoPipette%20Liquid%20Handler%20Building%20Guide.pdf) found under the AutoPipette Liquid Handler directory. This guide provides step-by-step instructions for building and setting up the AutoPipette liquid handler.
 <p align="center">
-<img width="400" alt="Picture9" src="https://github.com/user-attachments/assets/6baa2d54-e893-4194-9725-cbd8b217ad27" />
+<img width="400" alt="Picture9" src="/Images/liquibot%20cad.png" />
 </p>
 
 ---
