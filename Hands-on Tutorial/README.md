@@ -36,3 +36,11 @@ Finally, we apply active learning to a **real experimental dataset** involving e
 - Seed Library Generation (Initial sampling)
 - Structure of Self-Driving Labs
 - Closing the Loop
+
+---
+
+## Authors:
+Apostolos Maroulis, Dylan Waynor, Quinn Gallagher, Roshan Patel, Matthew Tamasi<br>
+<img width="300" src="/Images/gllogo.png">
+
+Last Updated ***
