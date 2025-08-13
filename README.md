@@ -26,9 +26,7 @@ Experimentation is inherently difficult because most methods require optimizatio
 ---
 
 ## Authors:
-Apostolos Maroulis,
-Dylan Waynor
-
-<img width="500" height="238" alt="image-asset" src="https://github.com/user-attachments/assets/dc089951-90d0-4818-8117-935856d4576b" />
+Apostolos Maroulis, Dylan Waynor<br>
+<img width="300" src="/Images/gllogo.png">
 
 Last Updated ***
