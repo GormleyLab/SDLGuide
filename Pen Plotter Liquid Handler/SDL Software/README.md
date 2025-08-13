@@ -1,6 +1,6 @@
 # Self-Driving Lab based on AxiDraw and Syringe Pump
 <p align="center">
-<img width="500" alt="axidraw" src="https://github.com/user-attachments/assets/7a4bab44-c8ab-45c0-b3f7-0daddad699fe" />
+<img width="500" alt="axidraw" src="/Images/axidraw.png" />
 </p>
 
 This project provides a graphical user interface (GUI) for automating enzyme assay experiments using a custom-built AxiDraw pen plotter liquid handler and a SpectraMax M2plate reader. It enables users to design, dispense, and analyze experimental formulations with minimal manual intervention.
