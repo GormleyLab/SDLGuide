@@ -1,10 +1,10 @@
 <p align="center">
-  <img width="900" alt="readme home" src="https://github.com/user-attachments/assets/2d45c6cb-684b-4610-b862-71eeb1fae28a" />
+  <img width="900" alt="readme home" src="https://github.com/user-attachments/assets/a6531e94-a821-4ddb-b5ea-00947e8dab23" />
 </p>
 
 # Overview:
 This repository contains the instructions/code/files for the assembly and operations of a [Pen Plotter Driven Liquid Handler](/Pen%20Plotter%20Liquid%20Handler) and 
-[Pipette Driven Liquid Handler](/AutoPipette%20Liquid%20Handler) as well as a collection of hands-on tutorial notebooks. Both devices are designed as low-cost automation tools to produce self-driving labs (SDLs). The pen plotter-driven liquid handler is created using rigid prebuilt spatial components that are modified to fit a user-developed fluidic system. The pipette-driven liquid handler is designed using modular components to provide the most flexibility, paired with a wireless autopipette.  
+[Pipette Driven Liquid Handler](/AutoPipette%20Liquid%20Handler) as well as a collection of hands-on tutorial notebooks. Both devices are designed as low-cost automation tools to produce self-driving labs (SDLs). The pen plotter-driven liquid handler is created using rigid pre-built spatial components that are modified to fit a user-developed fluidic system. The pipette-driven liquid handler is designed using modular components to provide the most flexibility, paired with a wireless autopipette.  
 
 ---
 
