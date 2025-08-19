@@ -9,13 +9,29 @@
       --accent: #cc0033;
       --primary: #3b82f6;
       --primary-dark: #2563eb;
-      --bg: #f9f9f9;
+      --bg: #dadada;
       --card-bg: #ffffff;
       --text: #333;
       --radius: 10px;
       --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
-    * { box-sizing: border-box; }
+    * { 
+      box-sizing: border-box;
+    }
+    /* Reset all possible border effects */
+    *::before,
+    *::after {
+      border: none !important;
+      border-left: none !important;
+      content: none !important;
+    }
+    .card *:not(.btn),
+    .card *:not(.btn)::before,
+    .card *:not(.btn)::after {
+      border-left-width: 0 !important;
+      border-left-style: none !important;
+      border-left-color: transparent !important;
+    }
     body {
       margin: 0;
       font-family: "Segoe UI", system-ui, sans-serif;
@@ -25,11 +41,24 @@
     }
     header {
       background: var(--accent);
-      color: #fff;
+      color: #fff !important;
       text-align: center;
       padding: 3rem 1rem 2.5rem;
+      position: relative;
     }
     header h1 { margin: 0 0 0.5rem; }
+    .logo {
+      position: absolute;
+      top: 1rem;
+      height: 60px;
+      width: auto;
+    }
+    .logo-left {
+      left: 1rem;
+    }
+    .logo-right {
+      right: 1rem;
+    }
     .container {
       max-width: 1050px;
       margin: -3rem auto 4rem;
@@ -49,15 +78,15 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      transition: box-shadow 0.15s ease;
     }
     .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
     .card h2 {
       margin: 0 0 0.55rem;
       font-size: 1.25rem;
+      border: none;
     }
     .card p { margin: 0 0 1rem; }
     .btn {
@@ -65,7 +94,7 @@
       padding: 0.55rem 1.2rem;
       margin: 0.35rem 0.4rem 0 0;
       background: var(--primary);
-      color: #fff;
+      color: #fff !important;
       text-decoration: none;
       border-radius: 4px;
       font-size: 0.95rem;
@@ -83,11 +112,39 @@
       margin-bottom: 0.5rem;
       color: var(--accent);
     }
+    /* Remove all border effects on text hover */
+    .card h1,
+    .card h2,
+    .card h3,
+    .card p,
+    .card span,
+    .card div,
+    .card *:not(.btn) {
+      border: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    /* Ensure no hover effects on text */
+    .card *:not(.btn):hover {
+      border: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
   </style>
 </head>
 <body>
   <!-- ===== HERO ===== -->
   <header>
+    <img src="/Images/gllogo.png" alt="Gormley Lab Logo" class="logo logo-left">
+    <img src="/Images/gllogo.png" alt="Gormley Lab Logo" class="logo logo-right">
     <h1>Welcome to the User's Guide to AL/SDLs Repository</h1>
     <p>Explore build guides, software, and hands-on tutorials for automated liquid handling and experiment optimization.</p>
   </header>
@@ -95,13 +152,13 @@
   <main class="container">
 
     <!-- ===== LIQUID HANDLERS ===== -->
-    <section class="card" style="border:none; box-shadow:none; padding-bottom:0;">
+    <section class="card" style="border:none; box-shadow:none; padding-bottom:0; margin-bottom: 0.5rem;">
       <h2 class="section-title">Liquid Handler Platforms</h2>
       <p>Choose your platform to access build guides, software, and documentation.</p>
     </section>
     <div class="cards-grid">
 
-      <!-- AutoPipette Liquid Handler -->
+      <!-- Pipette Liquid Handler -->
       <section class="card">
         <h2>AutoPipette Liquid Handler</h2>
         <p>Automated pipetting platform with SDL software and full build documentation.</p>
@@ -127,9 +184,9 @@
     </div>
 
     <!-- ===== HANDS-ON TUTORIALS ===== -->
-    <section class="card" style="border:none; box-shadow:none; margin-top:2.5rem; padding-bottom:0;">
+    <section class="card" style="border:none; box-shadow:none; margin-top:2.5rem; padding-bottom:0; margin-bottom: 0.5rem;">
       <h2 class="section-title">Hands-on Tutorial</h2>
-      <p>Work through practical examples using local Jupyter notebooks.</p>
+      <p>Work through practical examples using local Jupyter notebooks or Google Colaboratory notebooks.</p>
     </section>
     <div class="cards-grid">
 
@@ -138,7 +195,8 @@
         <h2>Notebook 1 · Bayesian Optimization in 1D</h2>
         <p>Bayesian Optimization (BO) applied to a 1D black-box function. This notebook introduces the foundational concepts of active learning.</p>
         <div>
-          <a class="btn" href="Hands-on%20Tutorial/Section%201%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Open Notebook</a>
+          <a class="btn" href="Hands-on%20Tutorial/Section%201%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Jupyter Notebook</a>
+          <a class="btn" href="Hands-on%20Tutorial/Section%201%20AL%20Tutorial_8_5_25.ipynb" target="_blank">Google Colab Notebook</a>
         </div>
       </section>
 
