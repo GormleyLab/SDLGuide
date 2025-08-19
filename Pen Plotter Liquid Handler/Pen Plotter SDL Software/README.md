@@ -46,8 +46,8 @@ src/
 ### Installation
 
 ```sh
-git clone <repo-url>
-cd SDL_6_3_25
+git clone <https://github.com/GormleyLab/SDLGuide>
+cd Pen Plotter Liquid Handler/Pen Plotter SDL Software
 pip install -r requirements.txt
 ```
 
@@ -77,7 +77,7 @@ This SOP provides relevant information necessary for the overall viability and u
 #### 1. Hardware Setup
 
 To adapt the AxiDraw Pen Plotting machine for liquid handling, several modifications are required.  
-Refer to the [Pen Plotter LH Build Guide](https://github.com/Pasta1107/Users-Guide-to-SDL/blob/main/Pen%20Plotter%20Liquid%20Handler/Pen%20Plotter%20LH%20Build%20Guide.pdf) for a detailed walkthrough of the necessary mechanical and hardware changes.  
+Refer to the [Pen Plotter LH Build Guide](/Pen%20Plotter%20Liquid%20Handler/Pen%20Plotter%20LH%20Build%20Guide.pdf) for a detailed walkthrough of the necessary mechanical and hardware changes.  
 
 1. **3D print the following custom parts**:  
    - AxiDraw Needle Holder  
