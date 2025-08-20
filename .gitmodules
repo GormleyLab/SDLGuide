@@ -1,3 +1,4 @@
 [submodule "Pipette-Liquid-Handler"]
 	path = Pipette-Liquid-Handler
-	url = https://github.com/Pasta1107/Pipette-Liquid-Handler
+	url = https://github.com/GormleyLab/Pipette-Liquid-Handler
+	branch = main
