@@ -4,7 +4,74 @@
 
 # Overview:
 This repository contains the instructions/code/files for the assembly and operations of a [Pen Plotter Driven Liquid Handler](/Pen%20Plotter%20Liquid%20Handler) and 
-[Pipette Driven Liquid Handler](https://github.com/Pasta1107/Pipette-Liquid-Handler) as well as a collection of hands-on tutorial notebooks. Both devices are designed as low-cost automation tools to produce self-driving labs (SDLs). The pen plotter-driven liquid handler is created using rigid pre-built spatial components that are modified to fit a user-developed fluidic system. The pipette-driven liquid handler is designed using modular components to provide the most flexibility, paired with a wireless autopipette.  
+[Pipette Driven Liquid Handler](https://github.com/GormleyLab/Pipette-Liquid-Handler) as well 
+as a collection of hands-on tutorial notebooks. Both devices are designed as low-cost 
+automation tools to produce self-driving labs (SDLs). The pen plotter-driven liquid handler 
+is created using rigid pre-built spatial components that are modified to fit a user-developed 
+fluidic system. The pipette-driven liquid handler is designed using modular components to 
+provide the most flexibility, paired with a wireless autopipette.
+---
+
+## Repository structure
+
+Use this diagram to navigate the repository:
+
+```
+├── Hands-on Tutorial/           # AL and SDL tutorial notebooks and example data
+│   ├── Notebook 1 - AL Tutorial.ipynb    # Principles of Active Learning
+│   ├── Notebook 2 - SDL Tutorial.ipynb   # Real-world SDL application (enzyme assay)
+│   ├── GOx Assay data_bank_renamed.csv  # Example GOx assay data for tutorials
+│   ├── Older Iterations/               # Previous notebook versions
+│   ├── requirements.txt                # Python dependencies for tutorials
+│   └── README.md
+│
+├── Pen Plotter Liquid Handler/   # AxiDraw-based liquid handler (hardware + software)
+│   ├── Pen Plotter SDL Software/ # GUI and automation software
+│   │   ├── data/
+│   │   │   └── GOx Assay data_bank.csv  # Validation dataset example
+│   │   ├── src/
+│   │   │   ├── sdlgui.py         # Main GUI layout and logic
+│   │   │   ├── guifunctions.py   # Experiment setup, seed library, dispensing
+│   │   │   ├── liquidhandler.py  # AxiDraw and syringe pump control
+│   │   │   ├── dataprocessing.py # Data extraction, ML/AL integration
+│   │   │   └── sdlvariables.py   # Global variables and experiment state
+│   │   ├── resources/            # Icons and assets
+│   │   ├── main.py               # Entry point (runs the GUI)
+│   │   ├── requirements.txt
+│   │   └── README.md
+│   ├── SDL CAD Files/                  # 3D printable parts (STL, STEP)
+│   ├── Pen Plotter LH Build Guide.pdf  # Building instructions for hardware
+│   ├── SDL_SOP.pdf                     # Standard operating procedure
+│   └── README.md
+│
+├── Pipette Liquid Handler/       # Wireless autopipette-based liquid handler (External Repo)
+│   ├── Pipette SDL Software/    # GUI and automation software
+│   │   ├── data/
+│   │   │   └── GOx Assay data_bank.csv  # Validation dataset example
+│   │   ├── src/
+│   │   │   ├── sdlgui.py         # Main GUI layout and logic
+│   │   │   ├── guifunctions.py   # Experiment setup, seed library, dispensing
+│   │   │   ├── liquidhandler.py  # Pipette and pump control
+│   │   │   ├── dataprocessing.py # Data extraction, ML/AL integration
+│   │   │   └── sdlvariables.py   # Global variables and experiment state
+│   │   ├── resources/            # Icons, tip positions, RemoteControl
+│   │   ├── main.py               # Entry point (runs the GUI)
+│   │   ├── requirements.txt
+│   │   └── README.md
+│   ├── Config Files/            # G-code and controller config (config.g, homeall.g, etc.)
+│   ├── Pipette CAD Files/       # 3D design files (needle holder, vial rack, etc.)
+│   ├── WIP Controller Program/   # Work-in-progress controller script alternatives
+│   ├── Pipette Liquid Handler Building Guide.pdf
+│   ├── Pipette Liquid Handler Parts List.xlsx
+│   └── README.md
+│
+├── Images/                      # Figures for README and docs
+├── index.html                    # Project homepage
+├── LICENSE
+└── README.md                     # This file
+```
+
+**Quick links:** [Tutorial Notebook 1 (AL)](/Hands-on%20Tutorial/Notebook%201%20-%20AL%20Tutorial.ipynb) · [Tutorial Notebook 2 (SDL)](/Hands-on%20Tutorial/Notebook%202%20-%20SDL%20Tutorial.ipynb) · [Pen Plotter Liquid Handler](/Pen%20Plotter%20Liquid%20Handler) · [Pipette Liquid Handler](https://github.com/GormleyLab/Pipette-Liquid-Handler)
 
 ---
 
@@ -28,4 +95,5 @@ Experimentation is inherently difficult because most methods require substantial
 Apostolos Maroulis, Dylan Waynor<br>
 <img width="300" src="/Images/gllogo.png">
 
-Last Updated 10/02/2025
+Last Updated 01/29/2026
+Version 1.0.0

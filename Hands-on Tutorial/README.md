@@ -33,4 +33,5 @@ Here, we apply active learning to a **real experimental dataset** involving enzy
 Apostolos Maroulis, Dylan Waynor, Quinn Gallagher, Roshan Patel, Matthew Tamasi<br>
 <img width="300" src="/Images/gllogo.png">
 
-Last Updated 10/02/2025
+Last Updated 01/29/2026
+Version 1.0.0
