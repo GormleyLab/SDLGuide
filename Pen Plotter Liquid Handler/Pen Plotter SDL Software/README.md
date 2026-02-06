@@ -157,4 +157,5 @@ MIT License
 Apostolos Maroulis, Dylan Waynor<br>
 <img width="300" src="/Images/gllogo.png">
 
-Last Updated ***
+Last Updated 01/29/2026
+Version 1.0.0
