@@ -1,3 +1,4 @@
+> **Note**: The widgets in the user interface for notebook 2 do not render in the GitHub Preview. To view, you must download and run locally, or view the notebook in [Google Colab](https://colab.research.google.com/drive/1bBl2bTz1-Y4bTuPBKBZ19CbYj2Hosa-n?usp=sharing)
 ## Overview
 
 The goal of this tutorial is to walk through the essentials of **Active Learning (AL)** from start to finish, providing both conceptual explanations and hands-on code examples. A basic understanding of **Machine Learning (ML)** is assumed. If you're new to ML, we highly recommend reviewing:
@@ -33,5 +34,5 @@ Here, we apply active learning to a **real experimental dataset** involving enzy
 Apostolos Maroulis, Dylan Waynor, Quinn Gallagher, Roshan Patel, Matthew Tamasi<br>
 <img width="300" src="/Images/gllogo.png">
 
-Last Updated 01/29/2026
+Last Updated 02/06/2026
 Version 1.0.0
