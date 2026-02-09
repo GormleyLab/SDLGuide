@@ -3,18 +3,14 @@
 </p>
 
 # Overview
-Self-driving laboratories (SDLs) address a common bottleneck in experimentation: time and effort required to explore large parameter spaces. By combining automated experimentation with machine learning (ML) and bayesian optimization (BO), an SDL can iteratively design experiments and learn from resulting data in a closed-loop, fully autonomous workflow.
+Self-driving laboratories (SDLs) address a common bottleneck in experimentation: time and effort required to explore large parameter spaces. By combining automated experimentation with machine learning (ML) and Bayesian optimization (BO), an SDL can iteratively design experiments and learn from resulting data in a closed-loop, fully autonomous workflow.
 
 This repository contains the instructions/code/files for the assembly and operations of a [Pen Plotter Driven Liquid Handler](/Pen%20Plotter%20Liquid%20Handler) and 
-[Pipette Driven Liquid Handler](https://github.com/GormleyLab/Pipette-Liquid-Handler) as well 
-as a collection of hands-on tutorial notebooks. Both devices are designed as low-cost 
-automation tools to produce SDLs. The pen plotter-driven liquid handler 
-is created using rigid pre-built spatial components that are modified to fit a user-developed 
-fluidic system. The pipette-driven liquid handler is designed using modular components to 
-provide the most flexibility, paired with a wireless autopipette.
+[Pipette Driven Liquid Handler](https://github.com/GormleyLab/Pipette-Liquid-Handler) as well as a collection of hands-on tutorial notebooks for active learning. Both devices are designed as low-cost automation tools to produce SDLs. The pen plotter-driven liquid handler is created using rigid pre-built spatial components that are modified to fit a user-developed 
+fluidic system. The pipette-driven liquid handler is designed using modular components to provide the most flexibility, paired with a wireless autopipette.
 
 In addition to hardware documentation, this repository includes a representative dataset generated using the SDL pipeline implemented here. The dataset was produced fully autonomously, and is used as an example to demonstrate how the design-build-test-learn (DBTL) workflow operates in practice, from experimental design through surrogate model training.
-We use the optimization of a glucose oxidase (GOx) enzyme assay, which are common in wet-lab environments and are well suited as a representative example to learn on. 
+We use the optimization of a glucose oxidase (GOx) enzyme assay, which are common in wet-lab environments and are well suited as a representative example. 
 
 ---
 
